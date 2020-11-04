@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.teste);
+        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.bach);
         inicializarSeekBar();
     }
 
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (mediaPlayer.isPlaying()) {
             mediaPlayer.stop();
-            mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.teste);
+            mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.bach);
         }
     }
 
